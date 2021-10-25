@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+span {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: #264653;
+    width: 100%;
+    height: 4rem;
+    color: white;
+    font-size: 3rem;
+    font-family: 'SpriteGraffiti-Shadow', Helvetica, Arial, sans-serif;
+    font-variant: small-caps;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    grid-gap: 30px;
+    margin: 60px 0 0 20px;
+    place-content: center;
+}
+
+h1 {
+    color: #264653;
+    font-family: sans-serif;
+    margin-bottom: 20px;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 70px 1fr;
+    outline: 1px solid rgb(30, 183, 253);
+    place-items: center;
+    margin-bottom: 20px;
+}
+
+p {
+    margin: 10px 10px 10px 0px;
+}
+
+@font-face {
+    font-family: 'SpriteGraffiti-Shadow';
+    src: url('/SpriteGraffiti-Shadow.ttf')
+}
+
+.trending .content {
+    background-color: #264653;
+    color: white;
+}
+
+img {
+    width: 50px;
+    border-radius: 50%;
+}
+
+@media screen and (max-width: 700px) {
+    .most-popular, .upcoming {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .trending {
+        display: grid;
+        grid-template: "... ... ...."200px "... ... ...." "... ... ...." / 300px;
+        margin-left: 150px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .trending {
+        display: grid;
+    }
+}
